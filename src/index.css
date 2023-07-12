@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  flex: 0 0 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  background-color: darkgray;
+}
+
+header .link{
+  font-size: 24px;
+  text-decoration: none;
+}
+
+header .link.active{
+  color: red
+}
+
+header .link:hover{
+  font-weight: 500;
+}
+
+main{
+  flex: 1 1 auto;
+  padding: 30px;
+  min-height: 80vh;
+}
+
+footer{
+  flex: 0 0 30px;
+  width: 100%;
+  background-color: lightgray;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+}
